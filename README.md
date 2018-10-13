@@ -28,10 +28,12 @@ Project consist of 8 screens
 LOGIN page is for the administrator only, no one else can login,this project have 3 login admin one with 
 username="saksham" and password="sl".
 The login user name and password are hardcoded and can be changed by changing values in maincontroller.java
+
 ![LOGIN](https://github.com/Saksham-Lakhera/library_management/blob/master/images/login.JPG)
 
 ## HOME
 HOME contains 6 buttons each of them refering or linking to another page.
+
 ![HOME](https://github.com/Saksham-Lakhera/library_management/blob/master/images/main.JPG)
 
 ## ADD BOOK
@@ -44,6 +46,7 @@ after clicking on ADD BOOKS button book is added to the database.
 It contains two text block MEMBER ID,BOOK ID these two must be filled,
 if any of the two values are wrong books is not issued,
 and if book is already issued to someone it is not issued as it's not available.
+
 ![ISSUE BOOK](https://github.com/Saksham-Lakhera/library_management/blob/master/images/book_issue.JPG)
 
 ## ADD MEMBER
@@ -62,6 +65,7 @@ It shows all the books available in library with details
 It contains two text block MEMBER ID,BOOK ID these two must be filled,
 if any of the two values are wrong there is an error.
 if no book is issued or some other book is issued to member,then error is displyed.
+
 ![BOOK LIST](https://github.com/Saksham-Lakhera/library_management/blob/master/images/return.JPG)
 
 ## SEARCH MEMBERS
