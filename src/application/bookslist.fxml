@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="348.0" prefWidth="549.0" style="-fx-background-color: #17141E;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.bookslistcontroller">
+   <children>
+      <ImageView fitHeight="348.0" fitWidth="549.0" opacity="0.7">
+         <image>
+            <Image url="@../../../sa.png" />
+         </image>
+         <effect>
+            <BoxBlur height="3.04" width="18.21" />
+         </effect>
+      </ImageView>
+      <TextField layoutX="71.0" layoutY="79.0" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: #a6acaf;" text="BOOK ID" />
+      <TextField layoutX="134.0" layoutY="79.0" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: #a6acaf;" text="BOOK NAME" />
+      <TextField layoutX="241.0" layoutY="79.0" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: #a6acaf;" text="AUTHOR" />
+      <TextField layoutX="349.0" layoutY="79.0" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: #a6acaf;" text="PUBLICATIONS" />
+      <Button layoutX="208.0" layoutY="21.0" mnemonicParsing="false" onAction="#check" prefHeight="35.0" prefWidth="120.0" text="SHOW BOOKS">
+         <effect>
+            <Lighting light="$null" specularConstant="1.16" specularExponent="31.16">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Wingdings" size="15.0" />
+         </font></Button>
+      <ScrollPane layoutX="71.0" layoutY="104.0" prefHeight="187.0" prefWidth="412.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="287.0" prefWidth="414.0">
+               <children>
+                  <Label fx:id="label2" layoutX="83.0" layoutY="12.0" />
+                  <Label fx:id="label1" layoutX="10.0" layoutY="12.0" prefWidth="0.0" />
+                  <Label fx:id="label3" layoutX="173.0" layoutY="12.0" />
+                  <Label fx:id="label4" layoutX="286.0" layoutY="14.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

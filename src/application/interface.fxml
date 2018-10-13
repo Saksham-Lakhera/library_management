@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="649.0" style="-fx-background-color: #17141E;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.interfacecontroller">
+   <children>
+      <ImageView fitHeight="448.0" fitWidth="649.0" opacity="0.7">
+         <image>
+            <Image url="@../../../sa.png" />
+         </image>
+         <effect>
+            <BoxBlur height="3.04" width="18.21" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="98.0" layoutX="369.0" layoutY="305.0">
+         <image>
+            <Image url="@../../../dasd.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="98.0" layoutX="172.0" layoutY="174.0">
+         <image>
+            <Image url="@../../../member.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="98.0" layoutX="166.0" layoutY="41.0">
+         <image>
+            <Image url="@../../../book.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="60.0" layoutY="40.0" mnemonicParsing="false" onAction="#interfere" prefHeight="81.0" prefWidth="124.0" text="ADD BOOK">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.4" specularConstant="1.02" specularExponent="32.09" surfaceScale="1.62">
+               <light>
+                  <Light.Distant color="#f8edffc0" />
+               </light>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Button>
+      <Button layoutX="60.0" layoutY="173.0" mnemonicParsing="false" onAction="#interfere" prefHeight="81.0" prefWidth="124.0" text="ADD MEMBER">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.4" specularConstant="1.02" specularExponent="32.09" surfaceScale="1.62">
+               <light>
+                  <Light.Distant color="#f8edffc0" />
+               </light>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Button>
+      <Button layoutX="459.0" layoutY="40.0" mnemonicParsing="false" onAction="#interfere" prefHeight="81.0" prefWidth="124.0" text="ISSUE BOOK">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.4" specularConstant="1.02" specularExponent="32.09" surfaceScale="1.62">
+               <light>
+                  <Light.Distant color="#f8edffc0" />
+               </light>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Button>
+      <Button layoutX="60.0" layoutY="305.0" mnemonicParsing="false" onAction="#interfere" prefHeight="81.0" prefWidth="124.0" text="RETURN BOOK">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.4" specularConstant="1.02" specularExponent="32.09" surfaceScale="1.62">
+               <light>
+                  <Light.Distant color="#f8edffc0" />
+               </light>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Button>
+      <Button layoutX="459.0" layoutY="169.0" mnemonicParsing="false" onAction="#interfere" prefHeight="81.0" prefWidth="124.0" text="BOOKS LIST">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.4" specularConstant="1.02" specularExponent="32.09" surfaceScale="1.62">
+               <light>
+                  <Light.Distant color="#f8edffc0" />
+               </light>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Button>
+      <Button layoutX="459.0" layoutY="302.0" mnemonicParsing="false" onAction="#interfere" prefHeight="81.0" prefWidth="124.0" text="SEARCH MEMBER">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.4" specularConstant="1.02" specularExponent="32.09" surfaceScale="1.62">
+               <light>
+                  <Light.Distant color="#f8edffc0" />
+               </light>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect></Button>
+      <ImageView fitHeight="81.0" fitWidth="98.0" layoutX="368.0" layoutY="41.0">
+         <image>
+            <Image url="@../../../rrt1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="90.0" layoutX="180.0" layoutY="306.0">
+         <image>
+            <Image url="@../../../rett.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="98.0" layoutX="368.0" layoutY="169.0">
+         <image>
+            <Image url="@../../../asa.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

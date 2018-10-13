@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="348.0" prefWidth="549.0" style="-fx-background-color: #17141E;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.returncontroller">
+   <children>
+      <ImageView fitHeight="348.0" fitWidth="549.0" layoutX="1.0" opacity="0.7">
+         <image>
+            <Image url="@../../../sa.png" />
+         </image>
+         <effect>
+            <BoxBlur height="3.04" width="18.21" />
+         </effect>
+      </ImageView>
+      <TextField fx:id="memberid" layoutX="47.0" layoutY="50.0" prefHeight="35.0" prefWidth="200.0" promptText="MEMBER ID" style="-fx-background-color: #D9E7FF;">
+         <font>
+            <Font name="Webdings" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="bookid" layoutX="47.0" layoutY="109.0" prefHeight="35.0" prefWidth="200.0" promptText="BOOK ID" style="-fx-background-color: #D9E7FF;">
+         <font>
+            <Font name="Webdings" size="16.0" />
+         </font></TextField>
+      <Button layoutX="63.0" layoutY="162.0" mnemonicParsing="false" onAction="#check" prefHeight="45.0" prefWidth="169.0" text="RETURN">
+         <effect>
+            <Lighting specularConstant="1.16" specularExponent="31.16">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Wingdings" size="16.0" />
+         </font></Button>
+      <Label fx:id="returnlabel" alignment="CENTER" contentDisplay="CENTER" layoutX="321.0" layoutY="279.0" prefHeight="17.0" prefWidth="206.0" textFill="#fff0f0">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="232.0" layoutY="128.0">
+         <image>
+            <Image url="@../../../k.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="2.0" specularConstant="1.33" specularExponent="10.23" surfaceScale="4.07">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#4951a4" />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <Separator layoutX="287.0" layoutY="33.0" orientation="VERTICAL" prefHeight="287.0" prefWidth="11.0" />
+      <Label layoutX="63.0" layoutY="228.0" text="BOOK DETAILS :" textFill="WHITE">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="br" layoutX="63.0" layoutY="255.0" textFill="WHITE" />
+   </children>
+</Pane>

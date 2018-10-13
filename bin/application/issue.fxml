@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="348.0" prefWidth="549.0" style="-fx-background-color: #17141E;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.issuecontroller">
+   <children>
+      <ImageView fitHeight="348.0" fitWidth="549.0" layoutY="1.0" opacity="0.7">
+         <image>
+            <Image url="@../../../sa.png" />
+         </image>
+         <effect>
+            <BoxBlur height="3.04" width="18.21" />
+         </effect>
+      </ImageView>
+      <Label fx:id="issuelabel" alignment="TOP_CENTER" graphicTextGap="30.0" layoutX="329.0" layoutY="273.0" prefHeight="34.0" prefWidth="175.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="memberid" layoutX="45.0" layoutY="42.0" prefHeight="35.0" prefWidth="200.0" promptText="MEMBER ID" style="-fx-background-color: #D9E7FF;">
+         <font>
+            <Font name="Webdings" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="bookid" layoutX="45.0" layoutY="103.0" prefHeight="35.0" prefWidth="200.0" promptText="BOOK ID" style="-fx-background-color: #D9E7FF;">
+         <font>
+            <Font name="Webdings" size="16.0" />
+         </font></TextField>
+      <Button layoutX="61.0" layoutY="153.0" mnemonicParsing="false" onAction="#check" prefHeight="45.0" prefWidth="169.0" text="ISSUE BOOK">
+         <effect>
+            <Lighting specularConstant="0.81">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Label fx:id="showbook" alignment="CENTER" layoutX="18.0" layoutY="231.0" prefHeight="89.0" prefWidth="255.0" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="316.0" layoutY="31.0">
+         <image>
+            <Image url="@../../../ret.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="2.0" specularConstant="1.33" specularExponent="10.23" surfaceScale="4.07">
+               <bumpInput>
+                  <InnerShadow>
+                     <input>
+                        <Shadow />
+                     </input>
+                  </InnerShadow>
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="91.05" color="#4951a4" elevation="40.81" />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <Separator layoutX="285.0" layoutY="31.0" orientation="VERTICAL" prefHeight="288.0" prefWidth="3.0">
+         <effect>
+            <Lighting specularConstant="0.44" specularExponent="32.09">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#fdfffc" />
+               </light>
+            </Lighting>
+         </effect>
+      </Separator>
+      <Label layoutX="88.0" layoutY="212.0" text="BOOK DETAILS :" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+
+   </children>
+</Pane>
