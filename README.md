@@ -1,82 +1,128 @@
-# library_management
-This system is build for maintaining books in library,anyone can easily deploy it,
-where only members are allowed to issue books and all the members details are stored.
-Bools details are also stored, and if anyone have issued the book they can be easily viewed.
+# Library Management System
 
-This project is also based on utilizing concepts of java such as
+This Library Management System is designed to efficiently manage books and members in a library. It allows only registered members to issue books while storing all relevant details, including member and book information. Administrators can track issued books and view their availability with ease.
 
-#### list,
-#### hash set,
-#### array list,
-#### reader,
-#### iterator etc.
-This project is even useful at school or college level as it give insight of basic 
-#### java and javafx.
+This project utilizes **Java** and **JavaFX**, making it an excellent resource for learning core Java concepts and GUI development. It is ideal for deployment in schools, colleges, or small libraries.
 
-## Modules
-Project consist of 8 screens
-##### 1.LOGIN
-##### 2.HOME
-##### 3.ADD BOOK
-##### 4.ISSUE BOOK
-##### 5.ADD MEMBER
-##### 6.BOOK LIST
-##### 7.RETURN BOOK
-##### 8.SEARCH MEMBER
+---
 
-## LOGIN
-LOGIN page is for the administrator only, no one else can login,this project have 3 login admin one with 
-username="saksham" and password="sl".
-The login user name and password are hardcoded and can be changed by changing values in maincontroller.java
+## 🚀 Features
+- **Member Management**: Add and track member details.
+- **Book Management**: Add, issue, return, and view book details.
+- **Admin Login**: Only administrators can access the system.
+- **Search Members**: Find members by ID or name, along with issued book details.
+- **Database Integration**: Uses text files for data storage (path customization required).
+
+---
+
+## 🛠️ Key Java Concepts Utilized
+- **List**
+- **HashSet**
+- **ArrayList**
+- **Reader**
+- **Iterator**
+
+This project is a practical introduction to basic Java and JavaFX, providing hands-on experience with data structures, file handling, and GUI applications.
+
+---
+
+## 📂 Project Modules
+The system consists of **8 main screens**:
+1. **Login**  
+2. **Home**  
+3. **Add Book**  
+4. **Issue Book**  
+5. **Add Member**  
+6. **Book List**  
+7. **Return Book**  
+8. **Search Member**
+
+---
+
+## 🔑 Login
+- The **Login Page** is restricted to administrators only.  
+- **Default Admin Credentials**:
+  - Username: `saksham`
+  - Password: `sl`
+- Credentials are hardcoded and can be updated in `MainController.java`.
 
 ![LOGIN](https://github.com/Saksham-Lakhera/library_management/blob/master/images/login.JPG)
 
-## HOME
-HOME contains 6 buttons each of them refering or linking to another page.
+---
+
+## 🏠 Home
+The **Home Screen** serves as the dashboard with six buttons linking to the other pages.
 
 ![HOME](https://github.com/Saksham-Lakhera/library_management/blob/master/images/main.JPG)
 
-## ADD BOOK
-It contains 4 text block which are ID,NAME,AUTHOR,PUBLICATION these fields must be entered,
-after clicking on ADD BOOKS button book is added to the database.
+---
 
-![LOGIN](https://github.com/Saksham-Lakhera/library_management/blob/master/images/add.JPG)
+## 📚 Add Book
+- Fields: **ID**, **Name**, **Author**, **Publication** (all required).  
+- On clicking the **Add Book** button, the book is saved in the database.
 
-## ISSUE BOOK
-It contains two text block MEMBER ID,BOOK ID these two must be filled,
-if any of the two values are wrong books is not issued,
-and if book is already issued to someone it is not issued as it's not available.
+![ADD BOOK](https://github.com/Saksham-Lakhera/library_management/blob/master/images/add.JPG)
+
+---
+
+## 📖 Issue Book
+- Fields: **Member ID**, **Book ID** (both required).  
+- Books are issued only if:
+  - The Member ID and Book ID are valid.
+  - The book is not already issued.  
+- Errors are displayed for invalid inputs or unavailable books.
 
 ![ISSUE BOOK](https://github.com/Saksham-Lakhera/library_management/blob/master/images/book_issue.JPG)
 
-## ADD MEMBER
-It contains 4 text block which are ID,NAME,PHONE,EMAIL these fields must be entered,
-no two member can have same member id,
-after clicking on ADD MEMBER button member is added to the database.
+---
+
+## 👤 Add Member
+- Fields: **ID**, **Name**, **Phone**, **Email** (all required).  
+- Members cannot have duplicate IDs.  
+- Clicking **Add Member** saves the member to the database.
 
 ![ADD MEMBER](https://github.com/Saksham-Lakhera/library_management/blob/master/images/new_member.JPG)
 
-## BOOK LIST
-It shows all the books available in library with details
+---
+
+## 📋 Book List
+Displays all books available in the library along with their details.
 
 ![BOOK LIST](https://github.com/Saksham-Lakhera/library_management/blob/master/images/book_list.JPG)
 
-## RETURN BOOK
-It contains two text block MEMBER ID,BOOK ID these two must be filled,
-if any of the two values are wrong there is an error.
-if no book is issued or some other book is issued to member,then error is displyed.
+---
 
-![BOOK LIST](https://github.com/Saksham-Lakhera/library_management/blob/master/images/return.JPG)
+## 🔄 Return Book
+- Fields: **Member ID**, **Book ID** (both required).  
+- Errors are shown if:
+  - No books are issued to the member.
+  - An incorrect book ID is entered.
 
-## SEARCH MEMBERS
-It contains 2 text box any of the text box can be used for searching,they can be searched either by their id's or by their name,
-all the books details issued to the member is also displayed.
+![RETURN BOOK](https://github.com/Saksham-Lakhera/library_management/blob/master/images/return.JPG)
+
+---
+
+## 🔍 Search Members
+- Search members by **ID** or **Name**.  
+- Displays all issued book details for the member.
 
 ![SEARCH MEMBERS](https://github.com/Saksham-Lakhera/library_management/blob/master/images/search_member.JPG)
 
+---
 
-## TO DO
+## 📌 To Do
+- The system currently uses text files for the database. Paths must be updated in all controller files.  
+- Future enhancements:
+  - Transition to a relational database for scalability.
+  - Implement user-level authentication for members.
 
-as this project is build by using basic java, the database is a text file,so in all the controllers java files path must be changed.
+---
 
+## 🎓 Project Context
+This project was developed as part of the **Java course** during my undergraduate program, focusing on building foundational Java and JavaFX skills.
 
+---
+
+## 📧 Contact
+For any queries or suggestions, feel free to reach out:  
+**Linkedin**: [https://www.linkedin.com/in/sakshamlakhera/]  
